@@ -1,0 +1,23 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\begin{document}
+\section*{Impacts IA \& Programme RH (ex\'ecutif)}
+\subsection*{Impacts sur les algorithmes d'IA}
+\textbf{Principe directeur} : troncatures $\Rightarrow$ invariant (lambda/pi) $\Rightarrow$ garde-fous falsifiables (NonTautology, Progression, Alignement, RMT).
+\begin{itemize}
+  \item Deep supervis\'e : r\'egularisation spectrale (RMT), perte troncature-aware $\mathcal{L}_\lambda$.
+  \item LLM : filtrage qualit\'e (NonTautology), d\'ecodage topo-coh\'erent (progression dialectique).
+  \item Neuro-symbolique : boucle LLM$\to$Lean avec garde $\lambda$ (distance s\'emantique minimale).
+  \item Temps r\'eel : stabilit\'e multi-\'echelles, Monte-Carlo r\'egularis\'e RMT.
+\end{itemize}
+\subsection*{Programme RH (jalons/gates)}
+A (Sym\'etries/Hilbert) : Gram PSD --- gate $\lambda_{\min}\ge -10^{-9}$.
+B (T2/T4) : calibration pond\'er\'ee --- gate R$^2\ge 0.9$, r\'esidu $\lambda$ stable.
+C (RMT/TDA) : L2-to-GUE $\ll$ L2-to-Poisson ; persistance born\'ee.
+D (Jensen) : hyperbolicit\'e $\to$ Lean.
+E (Op\'erateur) : unitarit\'e num\'erique $\to$ spectre r\'eel, robustesse troncature.
+\subsection*{B\'en\'efices}
+S\'eparation intuition/num\'erique vs preuve; reproductibilit\'e (JSON/LaTeX/badges); arr\^et pr\'ecoce si FAIL (artefact pr\'ecis).
+\end{document}

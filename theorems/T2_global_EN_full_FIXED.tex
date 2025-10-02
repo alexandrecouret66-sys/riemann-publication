@@ -1,0 +1,31 @@
+% theorems/T2_global_EN_full_FIXED.tex
+\section{T2 --- From Robustness Conjecture to Theorem: a proof program}
+\label{sec:T2-program}
+\subsection{Paley--Wiener Density $\Rightarrow$ Nyman--Beurling Uniqueness}
+\begin{lemma}[Nyman--Beurling Uniqueness]\label{lem:NB-uniqueness}
+The spectral measure is uniquely determined by the explicit formula on $\mathcal{W}_A$.
+\end{lemma}
+\subsection{Large-Sieve in Density (Sampling on $\Xi_A$)}
+\begin{proposition}[Large-Sieve Density]\label{prop:LS-density}
+For $f\in H^1([-A-1,A+1])$, $\sum_{u\in\Xi_A}|f(u)|^2\le C_{LS}(A)\|f\|_{H^1}^2$.
+\end{proposition}
+\subsection{Robust Frame Lower Bound}
+\begin{lemma}[Frame Lower Bound]\label{lem:frame-lower}
+$AI\le S\le BI$ with $A>0$.
+\end{lemma}
+\subsection{Archimedean Calibration}
+\begin{proposition}[Archimedean Bound]\label{prop:arch-bound}
+$|A(\phi)|\le 2/A^2\,\|\hat\phi\|_1$.
+\end{proposition}
+\subsection{Atkin Regularity}
+\begin{lemma}[Atkin Regularity]\label{lem:atkin-regularity}
+$C_{fr}(A)\ge 1-O((\log A)^2/A)$.
+\end{lemma}
+\subsection{Poisson--Atkin Correlation $\Rightarrow$ Quantitative Gap}
+\begin{theorem}[Global Calibration Inequality]\label{thm:global-calibration}
+$C_{\rm arch}(A)\|\hat\phi\|_1\le \frac14\, C_{\rm fr}(A)\,c_\star(A)$.
+\end{theorem}
+\subsection{Global T2: Uniqueness / Non-Tautology}
+\begin{theorem}[T2: Arithmetic Uniqueness]\label{thm:T2-uniqueness}
+$|F_\phi(\mu')-F_\phi(\mu_\zeta)|\ge \epsilon(A)\|\phi\|_{L^2}$, $\epsilon(A)\ge 1/(\log A)^{0.45}$.
+\end{theorem}

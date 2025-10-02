@@ -1,0 +1,39 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=blue}
+% Fix ! LaTeX Error: Unicode character ′ (U+2032) not set up for use with LaTeX. + ! Missing $ inserted. (search $′$) By Thomas
+\DeclareUnicodeCharacter{2032}{\prime}
+\nocite{*}
+\title{Analytic Proof Framework for the Riemann Hypothesis (T1$′$--T4)}
+\author{Alexandre Couret \& InterIA collaborators}
+\date{\today}
+% Fix ! LaTeX Error: Environment proposition undefined. By Thomas
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\begin{document}
+\maketitle
+\begin{abstract}
+We present a Clay-style analytic framework (T1$′$--T4) with a quantitative spectral gap (T2),
+local detection (T3), and a Hilbert--P\'olya realization (T4). Numerical items are illustrative only.
+\end{abstract}
+\section*{Roadmap}
+\begin{itemize}
+\item T1$′$: functional criteria (NB/BD/KL).
+\item T2: spectral gap via PW density, large-sieve, frame bound, archimedean calibration, Atkin regularity, Poisson--Atkin correlation.
+\item T3: spectral stability; detailed wave-packet analysis in Appendix.
+\item T4: Hilbert--P\'olya realization.
+\end{itemize}
+\input{../theorems/T1_prime_NB_BaezDuarte}
+\input{../theorems/T2_global_EN_full_FIXED}
+\input{../theorems/T3_stability}
+\input{../theorems/T4_Hilbert_Polya}
+\appendix
+\input{sections/T3_wavepacket_analysis}
+\bibliographystyle{plain}
+\bibliography{../refs}
+\end{document}
